@@ -53,7 +53,7 @@ const RegisterPage = () => {
   const completePayment = (userData, monthlyFee) => {
     const totalPayment = monthlyFee;
     // Adding a function to test failure in payments as well
-    const isSuccess = Math.random() < 0.5;
+    const isSuccess = Math.random() < 0.99;
 
     if (isSuccess) {
       return {
