@@ -31,9 +31,9 @@ const LoginPage = () => {
     }
   };
 
-  {/* <div className="flex justify-center py-16 h-screen bg-[#dceeff]"> */}
   return (
     <div className="flex justify-center md:py-16 h-fit md:h-screen md:bg-[#e7d2fa]">
+    {/* <div className="flex justify-center py-16 h-screen bg-[#dceeff]"> */}
         <div className='bg-white flex flex-col md:flex-row shadow-lg w-full md:w-2/3 rounded-xl'>
           <div className='w-full md:w-1/2 flex items-center justify-center'>
           <img
