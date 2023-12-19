@@ -5,8 +5,8 @@ import { useMobile } from '../context/MobileContext';
 const Receipt = () => {
     const { mobile } = useMobile();
     const [receiptDetails, setReceiptDetails] = useState({});
-    
-    
+
+
     useEffect(() => {
         const fetchReceiptDetails = async () => {
             const url = process.env.REACT_APP_API_URL;
@@ -24,12 +24,23 @@ const Receipt = () => {
     }, [mobile]);
 
     return (
-        <div className="flex justify-center py-16 h-screen bg-[#e7d2fa]">
-            <div className='bg-white flex flex-row shadow-lg w-2/3 rounded-xl'>
-                <div className='w-1/2 flex items-center justify-center'>
-                    <img src='/meditate.png' className='w-[300px]' alt="Meditation Illustration" />
+        <div className="flex justify-center md:py-16 h-fit md:h-screen md:bg-[#e7d2fa]">
+            <div className='bg-white flex flex-col md:flex-row shadow-lg w-full md:w-2/3 rounded-xl'>
+                <div className='w-full md:w-1/2 flex items-center justify-center'>
+                    <img
+                        src='/meditate.png'
+                        className='w-full max-w-[350px] mx-auto md:mx-0 hidden md:block'
+                        alt="Meditation Illustration"
+                    />
                 </div>
-                <div className="w-1/2 bg-[#e9f2fb] px-8 rounded-tl-3xl rounded-bl-3xl flex flex-col justify-center">
+                <div className="w-full md:w-1/2 h-screen md:h-full bg-[#e9f2fb] p-8 rounded-tl-3xl rounded-bl-3xl flex flex-col justify-center">
+                    <div className='w-full md:w-1/2 flex items-center justify-center'>
+                        <img
+                            src='/meditate.png'
+                            className='w-[300px] md:hidden'
+                            alt="Meditation Illustration"
+                        />
+                    </div>
                     <div>
                         <h2 className="text-2xl font-bold mb-4">Payment Receipt</h2>
 
