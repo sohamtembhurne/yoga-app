@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 //Notifications for toaster
 export const notifyHello = () => toast.info("Hello, register to join");
 export const notifyUser = () => toast.info("Welcome back to Mindful");
+export const notifyEdit = () => toast.error("Cannot edit this field");
 export const notifyPaymentSuccess = () => toast.success("Payment successful!");
 export const notifyPaymentFail = () => toast.error(`Payment failed`);
 

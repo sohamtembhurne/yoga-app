@@ -10,6 +10,7 @@ const TextInput = (props) => (
     onChange={props.onChange}
     required
     className="mt-3 p-2 block w-full bg-white border rounded-md shadow-sm focus:outline-none focus:ring-[#66279a] focus:border-[#66279a] sm:text-sm"
+    onClick={props.onClick}
     style={props.style}
   />
 );
